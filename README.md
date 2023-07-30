@@ -13,7 +13,7 @@ Written in VBScript, tested on Windows 7 and Windows 10
 
 Run at the command line or via task scheduler with
  
-cscript VIF_backup /source:<file> /destination:<dir> /delete:14
+cscript VIF_backup /source:[file] /destination:[dir] /delete:14
 
 
 # What does this do?....
@@ -28,6 +28,8 @@ the copy of the original file will be to check for differences, if so it'll copy
  
 the /delete:14 will delete any files in the backup directory that are older than 14 days. You can use other numbers if 14 isn't to your liking.
  
-requires 2 parameters, /source:<file> /destination:<dir>
+requires 2 parameters, /source:[file] /destination:[dir]
  
 /delete is optional
+
+example: cscript VIF_backup.vbs /source:"c:\myfile.dat" /destination:"c:\backups\files"
